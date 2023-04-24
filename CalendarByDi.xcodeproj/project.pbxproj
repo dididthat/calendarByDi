@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1FD3C18A29F12DBA00FFA47F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD3C18929F12DBA00FFA47F /* AppDelegate.swift */; };
-		1FD3C18C29F12DBA00FFA47F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD3C18B29F12DBA00FFA47F /* SceneDelegate.swift */; };
 		1FD3C19329F12DBB00FFA47F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FD3C19229F12DBB00FFA47F /* Assets.xcassets */; };
 		1FD3C19629F12DBB00FFA47F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FD3C19429F12DBB00FFA47F /* LaunchScreen.storyboard */; };
 		1FD3C1A129F12DBB00FFA47F /* CalendarByDiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD3C1A029F12DBB00FFA47F /* CalendarByDiTests.swift */; };
@@ -47,7 +46,6 @@
 		0EF13B51AFE588310476BF6B /* Pods_CalendarByDi_CalendarByDiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalendarByDi_CalendarByDiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FD3C18629F12DBA00FFA47F /* CalendarByDi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalendarByDi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FD3C18929F12DBA00FFA47F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1FD3C18B29F12DBA00FFA47F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1FD3C19229F12DBB00FFA47F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FD3C19529F12DBB00FFA47F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1FD3C19729F12DBB00FFA47F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -166,7 +164,6 @@
 			isa = PBXGroup;
 			children = (
 				1FD3C18929F12DBA00FFA47F /* AppDelegate.swift */,
-				1FD3C18B29F12DBA00FFA47F /* SceneDelegate.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -466,7 +463,6 @@
 				1FD3C1BF29F1346200FFA47F /* DescriptionViewController.swift in Sources */,
 				1FE1379E29F57C25009FCAC2 /* OptionsCalendarViewController.swift in Sources */,
 				1FD3C18A29F12DBA00FFA47F /* AppDelegate.swift in Sources */,
-				1FD3C18C29F12DBA00FFA47F /* SceneDelegate.swift in Sources */,
 				1FE137A229F58921009FCAC2 /* ToDoManager.swift in Sources */,
 				1FE1379C29F569A3009FCAC2 /* CalendarTableViewCell.swift in Sources */,
 			);
