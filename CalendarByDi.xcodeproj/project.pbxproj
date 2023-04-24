@@ -17,6 +17,11 @@
 		1FD3C1AD29F12DBB00FFA47F /* CalendarByDiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD3C1AC29F12DBB00FFA47F /* CalendarByDiUITestsLaunchTests.swift */; };
 		1FD3C1BD29F1343F00FFA47F /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD3C1BC29F1343F00FFA47F /* CalendarViewController.swift */; };
 		1FD3C1BF29F1346200FFA47F /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD3C1BE29F1346200FFA47F /* DescriptionViewController.swift */; };
+		1FE1379C29F569A3009FCAC2 /* CalendarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE1379B29F569A3009FCAC2 /* CalendarTableViewCell.swift */; };
+		1FE1379E29F57C25009FCAC2 /* OptionsCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE1379D29F57C25009FCAC2 /* OptionsCalendarViewController.swift */; };
+		1FE137A029F586EF009FCAC2 /* ToDoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE1379F29F586EF009FCAC2 /* ToDoModel.swift */; };
+		1FE137A229F58921009FCAC2 /* ToDoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE137A129F58921009FCAC2 /* ToDoManager.swift */; };
+		1FE137A429F5A2B4009FCAC2 /* ToDo.json in Resources */ = {isa = PBXBuildFile; fileRef = 1FE137A329F5A2B4009FCAC2 /* ToDo.json */; };
 		3B279DAB5AAC71118F7B03D4 /* Pods_CalendarByDiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCED502FDC24EB8E933290B4 /* Pods_CalendarByDiTests.framework */; };
 		47044ED86FF1F1A7BFEF08F7 /* Pods_CalendarByDi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FB00978BF0D1C69BC5BD1A2 /* Pods_CalendarByDi.framework */; };
 		C58F3B2532C2D0059E26EBDF /* Pods_CalendarByDi_CalendarByDiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF13B51AFE588310476BF6B /* Pods_CalendarByDi_CalendarByDiUITests.framework */; };
@@ -55,6 +60,11 @@
 		1FD3C1AC29F12DBB00FFA47F /* CalendarByDiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarByDiUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1FD3C1BC29F1343F00FFA47F /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		1FD3C1BE29F1346200FFA47F /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
+		1FE1379B29F569A3009FCAC2 /* CalendarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTableViewCell.swift; sourceTree = "<group>"; };
+		1FE1379D29F57C25009FCAC2 /* OptionsCalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsCalendarViewController.swift; sourceTree = "<group>"; };
+		1FE1379F29F586EF009FCAC2 /* ToDoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoModel.swift; sourceTree = "<group>"; };
+		1FE137A129F58921009FCAC2 /* ToDoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoManager.swift; sourceTree = "<group>"; };
+		1FE137A329F5A2B4009FCAC2 /* ToDo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ToDo.json; sourceTree = "<group>"; };
 		23728D7639B5BF1B25516852 /* Pods-CalendarByDi-CalendarByDiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarByDi-CalendarByDiUITests.debug.xcconfig"; path = "Target Support Files/Pods-CalendarByDi-CalendarByDiUITests/Pods-CalendarByDi-CalendarByDiUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5FB00978BF0D1C69BC5BD1A2 /* Pods_CalendarByDi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalendarByDi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BFBB9B20F0A1A02FF083685 /* Pods-CalendarByDiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarByDiTests.release.xcconfig"; path = "Target Support Files/Pods-CalendarByDiTests/Pods-CalendarByDiTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,7 +140,9 @@
 			children = (
 				1FD3C1B929F130B100FFA47F /* Application */,
 				1FD3C1BA29F130C100FFA47F /* Controllers */,
+				1FE1379929F56948009FCAC2 /* Model */,
 				1FD3C1BB29F130CE00FFA47F /* Resources */,
+				1FE137A329F5A2B4009FCAC2 /* ToDo.json */,
 			);
 			path = CalendarByDi;
 			sourceTree = "<group>";
@@ -167,6 +179,7 @@
 				1FD3C18D29F12DBA00FFA47F /* MainTableConrtoller.swift */,
 				1FD3C1BC29F1343F00FFA47F /* CalendarViewController.swift */,
 				1FD3C1BE29F1346200FFA47F /* DescriptionViewController.swift */,
+				1FE1379D29F57C25009FCAC2 /* OptionsCalendarViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -181,6 +194,24 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		1FE1379929F56948009FCAC2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1FE1379A29F56950009FCAC2 /* Cell */,
+				1FE1379F29F586EF009FCAC2 /* ToDoModel.swift */,
+				1FE137A129F58921009FCAC2 /* ToDoManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1FE1379A29F56950009FCAC2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1FE1379B29F569A3009FCAC2 /* CalendarTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		4BAFEC7B81BD5FBFEA8BA101 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,7 +222,6 @@
 				A396B8D709E0455C78BE9613 /* Pods-CalendarByDiTests.debug.xcconfig */,
 				6BFBB9B20F0A1A02FF083685 /* Pods-CalendarByDiTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -304,6 +334,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FE137A429F5A2B4009FCAC2 /* ToDo.json in Resources */,
 				1FD3C19629F12DBB00FFA47F /* LaunchScreen.storyboard in Resources */,
 				1FD3C19329F12DBB00FFA47F /* Assets.xcassets in Resources */,
 			);
@@ -434,10 +465,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FD3C1BD29F1343F00FFA47F /* CalendarViewController.swift in Sources */,
+				1FE137A029F586EF009FCAC2 /* ToDoModel.swift in Sources */,
 				1FD3C18E29F12DBA00FFA47F /* MainTableConrtoller.swift in Sources */,
 				1FD3C1BF29F1346200FFA47F /* DescriptionViewController.swift in Sources */,
+				1FE1379E29F57C25009FCAC2 /* OptionsCalendarViewController.swift in Sources */,
 				1FD3C18A29F12DBA00FFA47F /* AppDelegate.swift in Sources */,
 				1FD3C18C29F12DBA00FFA47F /* SceneDelegate.swift in Sources */,
+				1FE137A229F58921009FCAC2 /* ToDoManager.swift in Sources */,
+				1FE1379C29F569A3009FCAC2 /* CalendarTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,6 +649,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -642,6 +678,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
