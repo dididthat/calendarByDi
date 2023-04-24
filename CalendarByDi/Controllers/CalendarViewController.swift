@@ -51,7 +51,7 @@ final class CalendarViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(CalendarTableViewCell.self, forCellReuseIdentifier: CalendarTableViewCell.idCalendarCell)
-                           
+        
         setConstraints()
         swipeCalendar()
         
@@ -60,9 +60,9 @@ final class CalendarViewController: UIViewController {
         navigationItem.rightBarButtonItem = (UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(AddButtonTap)))
         toDoManager.delegate = self
         toDoManager.getToDo {
-        self.toDoManager.showToDos(date: Date())
+            self.toDoManager.showToDos(date: Date())
         }
-    
+        
     }
     @objc func AddButtonTap() {
         let calendarOption = OptionsCalendarViewController()
@@ -81,7 +81,7 @@ final class CalendarViewController: UIViewController {
         }
     }
     
-//MARK: Свайпать календарь
+    //MARK: Свайпать календарь
     
     func swipeCalendar(){
         let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe))
@@ -131,7 +131,7 @@ extension CalendarViewController: UITableViewDelegate, UITableViewDataSource {
             let descriptionVC = DescriptionViewConrtoller()
             descriptionVC.toDo = toDo
             navigationController?.pushViewController(descriptionVC, animated: true)
-            }
+        }
     }
     
 }
@@ -162,7 +162,7 @@ private extension CalendarViewController {
             calendar.topAnchor.constraint(equalTo: view.topAnchor, constant: 90),
             calendar.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
             calendar.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
-
+            
         ])
         
         view.addSubview(showHideButton)
@@ -171,7 +171,7 @@ private extension CalendarViewController {
             showHideButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15),
             showHideButton.widthAnchor.constraint(equalToConstant: 100),
             showHideButton.heightAnchor.constraint(equalToConstant: 20)
-
+            
         ])
         
         view.addSubview(tableView)
@@ -187,9 +187,9 @@ extension CalendarViewController: ToDoManagerDelegate {
     func updateToDos() {
         tableView.reloadData()
         
-//            DispatchQueue.main.async {
-//                complition()
-//            }
+        //            DispatchQueue.main.async {
+        //                complition()
+        //            }
     }
 }
 

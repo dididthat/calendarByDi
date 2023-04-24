@@ -15,9 +15,7 @@ final class ToDoManager {
     var currentToDos: [ToDoModel] = []
     var toDos: [ToDoModel] = []
     func getToDo(complition: @escaping () ->Void) {
-//        toDos = [ToDoModel(id: 1, dateStart: "1682270061.8451629", dateFinish: "23.03", name: "lal", description: "kakka"), ToDoModel(id: 2, dateStart: "ddd", dateFinish: "23.03", name: "lal", description: "kakka"),
-//                 ToDoModel(id: 3, dateStart: "kkk", dateFinish: "23.03", name: "lal", description: "kakka")]
-//        complition()
+        
         DispatchQueue.global().async {
             self.toDos = self.getJSONData()
             DispatchQueue.main.async {
@@ -47,7 +45,7 @@ final class ToDoManager {
             return toDoHour == hour
         }.sorted { todo1, todo2 in
             return (todo1.dateStart ?? "")<=(todo2.dateStart ?? "")
-        }.first// взять первый элемент если есть
+        }.first
         
     }
     func getJSONData() -> [ToDoModel] {
